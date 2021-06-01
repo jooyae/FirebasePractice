@@ -1,18 +1,23 @@
-package org.sopt.firebasepractice
+package org.sopt.firebasepractice.firebase
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.telecom.Call
 import android.util.Log
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailabilityLight
-import com.google.android.gms.common.api.Response
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
+import org.sopt.firebasepractice.R
+import org.sopt.firebasepractice.base.BaseActivity
+import org.sopt.firebasepractice.base.BaseViewModel
+import org.sopt.firebasepractice.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity()  {
-    @SuppressLint("LongLogTag")
+class MainActivity : BaseActivity<ActivityMainBinding, BaseViewModel>() {
+    override val layoutResourceId: Int
+        get() = R.layout.activity_main
+    override val viewModel: BaseViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,7 +34,7 @@ class MainActivity : AppCompatActivity()  {
             } else {
                 val token = task.result
                 val msg = getString(R.string.msg_token_fmt, token)
-                Log.d("FirebasePractice.Success", msg)
+                Log.d("fbPractice.Success", msg)
             }
         })
     }
@@ -43,5 +48,17 @@ class MainActivity : AppCompatActivity()  {
             Log.e("updated", "updated")
             true
         }
+    }
+
+    override fun initStartView() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initDataBinding() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initAfterBinding() {
+        TODO("Not yet implemented")
     }
 }

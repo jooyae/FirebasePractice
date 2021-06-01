@@ -1,4 +1,4 @@
-package org.sopt.firebasepractice
+package org.sopt.firebasepractice.gallery
 
 import android.content.ContentUris
 import android.content.Context

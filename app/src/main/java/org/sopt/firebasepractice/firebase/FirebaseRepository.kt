@@ -1,4 +1,4 @@
-package org.sopt.firebasepractice
+package org.sopt.firebasepractice.firebase
 
 import android.content.SharedPreferences
 

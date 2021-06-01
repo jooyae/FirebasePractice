@@ -1,4 +1,4 @@
-package org.sopt.firebasepractice
+package org.sopt.firebasepractice.gallery
 
 import android.content.Intent
 import android.graphics.drawable.BitmapDrawable
