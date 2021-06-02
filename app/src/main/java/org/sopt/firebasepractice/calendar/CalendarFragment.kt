@@ -16,8 +16,17 @@ import java.text.DateFormat
 import java.util.*
 
 class CalendarFragment : Fragment() {
-
     lateinit var binding : FragmentCalendarBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentCalendarBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setCalendarView()

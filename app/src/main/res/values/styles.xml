@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarViewCustom" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="colorAccent" type="color">@color/piction_blue</item>
+    <item name="colorPrimary" type="color">@color/crayola_yellow</item>
+    <item name="colorButtonNormal" type="color">@color/floral_lavender</item>
+    <item name="colorBackgroundFloating" type="color">@color/mantis</item>
+    <item name="colorControlActivated" type="color">@color/beau_blue</item>
+    </style>
+
+    <style name="CalendarViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/shadow_blue</item>
+    </style>
+
+    <style name="CalendarViewTitle" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textColor">@color/shadow_blue2</item>
+    </style>
+
+</resources>

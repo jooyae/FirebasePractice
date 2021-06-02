@@ -15,7 +15,6 @@ import org.sopt.firebasepractice.firebase.MainActivity
 class GalleryActivity : AppCompatActivity() {
     lateinit var binding : ActivityGalleryBinding
     private var imageUri : Uri? = null
-    private var manager = supportFragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,10 +53,8 @@ class GalleryActivity : AppCompatActivity() {
 
     fun showCalendar(){
         binding.buttonCalendar.setOnClickListener {
-            val calendarFragment = CalendarFragment()
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.add(R.id.container_calendar, calendarFragment)
-            transaction.commit()
+            val intent = Intent(this@GalleryActivity, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 

@@ -12,16 +12,20 @@ import com.google.firebase.messaging.FirebaseMessaging
 import org.sopt.firebasepractice.R
 import org.sopt.firebasepractice.base.BaseActivity
 import org.sopt.firebasepractice.base.BaseViewModel
+import org.sopt.firebasepractice.calendar.CalendarFragment
 import org.sopt.firebasepractice.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding, BaseViewModel>() {
     override val layoutResourceId: Int
         get() = R.layout.activity_main
     override val viewModel: BaseViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
         checkgooglePlayServices()
+        setCalendarFragment()
 
         FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
             if (!task.isSuccessful) {
@@ -48,6 +52,13 @@ class MainActivity : BaseActivity<ActivityMainBinding, BaseViewModel>() {
             Log.e("updated", "updated")
             true
         }
+    }
+
+    fun setCalendarFragment(){
+        val calendarFragment = CalendarFragment()
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.calendar_fragment, calendarFragment)
+        transaction.commit()
     }
 
     override fun initStartView() {
