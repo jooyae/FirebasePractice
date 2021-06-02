@@ -6,18 +6,25 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import androidx.fragment.app.FragmentManager
+import org.sopt.firebasepractice.R
+import org.sopt.firebasepractice.calendar.CalendarFragment
 import org.sopt.firebasepractice.databinding.ActivityGalleryBinding
 import org.sopt.firebasepractice.firebase.MainActivity
 
 class GalleryActivity : AppCompatActivity() {
     lateinit var binding : ActivityGalleryBinding
     private var imageUri : Uri? = null
+    private var manager = supportFragmentManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityGalleryBinding.inflate(layoutInflater)
         setContentView(binding.root)
         uploadImageGallery()
         showMainFeatures()
+        showCalendar()
+
     }
 
     fun uploadImageGallery(){
@@ -42,9 +49,17 @@ class GalleryActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
     }
 
-
+    fun showCalendar(){
+        binding.buttonCalendar.setOnClickListener {
+            val calendarFragment = CalendarFragment()
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.add(R.id.container_calendar, calendarFragment)
+            transaction.commit()
+        }
+    }
 
     companion object {
         private const val PICK_IMAGE = 100
