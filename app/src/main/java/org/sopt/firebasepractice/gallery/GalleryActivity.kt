@@ -6,11 +6,8 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
-import androidx.fragment.app.FragmentManager
-import org.sopt.firebasepractice.R
-import org.sopt.firebasepractice.calendar.CalendarFragment
 import org.sopt.firebasepractice.databinding.ActivityGalleryBinding
-import org.sopt.firebasepractice.firebase.MainActivity
+import org.sopt.firebasepractice.main.MainActivity
 
 class GalleryActivity : AppCompatActivity() {
     lateinit var binding : ActivityGalleryBinding
