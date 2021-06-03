@@ -1,4 +1,15 @@
 
+## Facebook Login 
+
+👉🏻 **참고자료** 
+
+ 1. https://developers.facebook.com/docs/facebook-login/android#quickstarts-header
+ 
+ 3. https://ahsensaeed.com/kotlin-android-firebase-all-social-login/
+
+
+<img src="https://user-images.githubusercontent.com/58849278/120606919-a5230a00-c48a-11eb-870e-fca896a08f12.gif" width = 50%>
+
 
 ## 💙 Juyae's Calendar 💙
 
