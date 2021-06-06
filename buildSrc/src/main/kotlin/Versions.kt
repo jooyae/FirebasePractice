@@ -27,4 +27,6 @@ object Versions {
 
     const val swipe_refresh_layout_version = "1.1.0"
 
+    const val nav_version = "2.3.5"
+
 }

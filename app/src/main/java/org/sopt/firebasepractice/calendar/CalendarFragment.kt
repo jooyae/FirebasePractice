@@ -7,10 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CalendarView
 import android.widget.CalendarView.*
-import androidx.fragment.app.activityViewModels
-import org.sopt.firebasepractice.R
-import org.sopt.firebasepractice.base.BaseFragment
-import org.sopt.firebasepractice.base.BaseViewModel
 import org.sopt.firebasepractice.databinding.FragmentCalendarBinding
 import java.text.DateFormat
 import java.util.*
