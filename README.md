@@ -49,3 +49,8 @@
 
 <img src="https://user-images.githubusercontent.com/58849278/119821714-dac96f80-bf2d-11eb-9d5a-3f8f6403026c.png" width =50% > 
  
+## Gallery에서 Image 가져오기 
+
+Image Button Gallery 버튼 클릭 -> 사용자 핸드폰의 갤러리에서 이미지 가져오기 
+
+* 애뮬레이터의 갤러리는 빈칸으로 나옴 ! 
