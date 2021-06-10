@@ -14,7 +14,7 @@
         android:id="@+id/toolbar_community"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/beau_blue"
+        android:background="@color/blue_yonder"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
