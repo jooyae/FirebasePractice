@@ -9,10 +9,7 @@
         android:label="CalendarFragment" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="org.sopt.firebasepractice.LoginFragment"
+        android:name="org.sopt.firebasepractice.login.LoginFragment"
         android:label="LoginFragment" >
-        <action
-            android:id="@+id/action_loginFragment_to_calendarFragment"
-            app:destination="@id/calendarFragment" />
     </fragment>
 </navigation>

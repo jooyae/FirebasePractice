@@ -3,7 +3,6 @@ package org.sopt.firebasepractice.main
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.activity.viewModels
 import com.facebook.*
 import com.google.android.gms.common.ConnectionResult
@@ -13,13 +12,12 @@ import com.google.firebase.messaging.FirebaseMessaging
 import org.sopt.firebasepractice.R
 import org.sopt.firebasepractice.base.BaseActivity
 import org.sopt.firebasepractice.base.BaseViewModel
-import org.sopt.firebasepractice.calendar.CalendarFragment
 import org.sopt.firebasepractice.databinding.ActivityMainBinding
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.google.firebase.auth.FacebookAuthProvider
-import org.sopt.firebasepractice.LoginFragment
+import org.sopt.firebasepractice.login.LoginFragment
 
 
 class MainActivity : BaseActivity<ActivityMainBinding, BaseViewModel>() {

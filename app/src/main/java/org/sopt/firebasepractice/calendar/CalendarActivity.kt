@@ -1,11 +1,10 @@
-package org.sopt.firebasepractice
+package org.sopt.firebasepractice.calendar
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import org.sopt.firebasepractice.R
 import org.sopt.firebasepractice.base.BaseActivity
 import org.sopt.firebasepractice.base.BaseViewModel
-import org.sopt.firebasepractice.calendar.CalendarFragment
 import org.sopt.firebasepractice.databinding.ActivityCalendarBinding
 
 class CalendarActivity : BaseActivity<ActivityCalendarBinding, BaseViewModel>() {
