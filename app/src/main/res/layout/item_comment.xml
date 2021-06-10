@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintlayout_item_community"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleimageview_comment_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/juyae_swu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textview_comment_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintStart_toEndOf="@id/circleimageview_comment_user"
+        app:layout_constraintTop_toTopOf="@id/circleimageview_comment_user"
+        android:text="홍길동"
+        android:textStyle="bold"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textview_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintStart_toEndOf="@id/circleimageview_comment_user"
+        app:layout_constraintTop_toBottomOf="@id/textview_comment_id"
+        android:text="오늘은 비가 오네요 ㅠㅠ "
+        android:textSize="8sp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -9,25 +9,30 @@
     android:layout_height="match_parent"
     tools:context=".CommunityFragment">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tablayout_community"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_community"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:background="@color/beau_blue"
-        app:tabIndicator="@color/feb_first"
-        app:tabIndicatorColor="@color/blue_yonder"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:title="Chatting"
+        app:titleTextColor="@color/white" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewpager_community"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_community"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@id/bottomnavigation_community"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/bottomnavigation_community"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_community"
+        tools:listitem="@layout/item_comment" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomnavigation_community"
@@ -35,10 +40,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
