@@ -7,7 +7,7 @@
     android:id="@+id/constraintlayout_fragment_community"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CommunityFragment">
+    tools:context=".community.CommunityFragment">
 
 
     <androidx.appcompat.widget.Toolbar

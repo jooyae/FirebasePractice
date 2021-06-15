@@ -1,4 +1,4 @@
-package org.sopt.firebasepractice
+package org.sopt.firebasepractice.community
 
 import android.os.Bundle
 import android.os.Parcel
