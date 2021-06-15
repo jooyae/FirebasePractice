@@ -29,4 +29,6 @@ object Versions {
 
     const val nav_version = "2.3.5"
 
+    const val coroutine_version = "1.5.0"
+
 }
