@@ -26,20 +26,34 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_community"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="630dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/bottomnavigation_community"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_community"
         tools:listitem="@layout/item_comment" />
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomnavigation_community"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/edit_chat"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:hint=" Write Message Here"
+        android:textColor="@color/blue_yonder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview_community"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_chat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/blue_yonder"
+        android:text="전송"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/edit_chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_chat"
+        app:layout_constraintTop_toTopOf="@id/edit_chat" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
