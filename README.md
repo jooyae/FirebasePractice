@@ -143,6 +143,7 @@ Coroutine은 Thread/ AsyncTask/Rx 작업을 대신할 수 있는 Asynchronous/No
 
 
 **정지 함수는 기본 스레드에서 호출하기에 안전해야 함**
+
 정지 함수는 기본 스레드에서 호출하기에 안전한 기본 안전 함수여야 함 
 
 <img src="https://user-images.githubusercontent.com/58849278/122151195-15258d00-ce9a-11eb-9bdf-20f688540345.png" width =50%>
@@ -160,5 +161,5 @@ Coroutine은 Thread/ AsyncTask/Rx 작업을 대신할 수 있는 Asynchronous/No
 
  - 코루틴에서 발생하는 예외를 잘못 처리하면 앱이 **비정상 종료** 될 수 있음  
 	 <img src="https://user-images.githubusercontent.com/58849278/122152025-90d40980-ce9b-11eb-8059-b516f28f36c9.png" width = 50%>
-따라서 다음과 같은 코드로 예외를 포착
+
 
